@@ -1,0 +1,41 @@
+.slider-control {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5vw;
+    cursor: pointer;
+    color: #fff;
+    z-index: 1;
+}
+.slider-control-arrow {
+    transition-duration: 0.1s;
+}
+
+.slider-control-arrow > svg {
+    display: none;
+}
+.slider-control--right {
+    right: 0;
+    background-color: rgba(20, 20, 20, 0.7);
+}
+.slider-control--left {
+    left: 0;
+    background-color: rgba(20, 20, 20, 0.7);
+}
+.slider-control-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-control:hover .slider-control-arrow,
+.slider-control:active .slider-control-arrow {
+    transform: scale(1.2);
+    /* transform-origin: 45% 50%;
+    transition: transform 0.1s ease-out 0s, -webkit-transform 0.1s ease-out 0s,
+        -moz-transform 0.1s ease-out 0s, -o-transform 0.1s ease-out 0s; */
+}

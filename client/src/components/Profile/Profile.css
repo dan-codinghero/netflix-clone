@@ -1,0 +1,95 @@
+.profile-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: black; */
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.profile-list__content {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* margin: 0 auto; */
+}
+.profile-list__label {
+    font-size: 3.5vw;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+/* .profile-list__profiles {
+    margin: 1.6rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.profile-list__profile {
+    list-style: none;
+    width: 10vw;
+    max-width: 200px;
+    min-width: 84px;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-list__profile a {
+    text-decoration: none;
+}
+.profile-list__profile:not(:last-child) {
+    margin: 0 2vw 0 0;
+}
+
+.avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-list__icon {
+    background-size: cover;
+    height: 10vw;
+    width: 10vw;
+    max-height: 20rem;
+    max-width: 20rem;
+    min-height: 8.4rem;
+    min-width: 8.4rem;
+    border-radius: 0.4rem;
+}
+
+.profile-list__name {
+    font-size: 1.2rem;
+    color: grey;
+
+    line-height: 1.2rem;
+    min-height: 2rem;
+    display: inline-block;
+    text-align: center;
+    margin: 0.9rem 0;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+} */
+
+.manage-profile a {
+    display: inline-block;
+    text-decoration: none;
+    color: grey;
+    border: 1px solid grey;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 0.8rem 2.2rem;
+    letter-spacing: 2px;
+    cursor: pointer;
+    margin: 3.2rem 0 1.6rem 0;
+}
+
+@media screen and (min-width: 800px) {
+    .manage-profile a {
+        font-size: 1.3vw;
+    }
+}

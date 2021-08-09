@@ -1,0 +1,14 @@
+.logo {
+    text-align: left;
+    height: 100%;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.logo a {
+    text-decoration: none;
+}

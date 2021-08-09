@@ -1,0 +1,50 @@
+.headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 6vh 0;
+    max-width: 95rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: normal;
+    /* height: 50.5rem; */
+}
+
+.headline-title {
+    line-height: normal;
+    margin: 6rem auto 2rem;
+}
+.headline-subtitle {
+    font-weight: 400;
+    margin: 1.6rem auto;
+}
+
+.headline-title,
+.headline-subtitle {
+    max-width: 64rem;
+    text-align: center;
+}
+.cta {
+    margin: 0 auto;
+    max-width: 95rem;
+}
+.cta-title,
+.cta-disclaimer {
+    text-align: center;
+}
+
+@media screen and (min-width: 950px) {
+    .headline-title {
+        max-width: 80rem;
+    }
+    .headline-subtitle {
+        margin: 3rem auto 5rem;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .headline-title {
+        font-size: 6.4rem;
+    }
+}

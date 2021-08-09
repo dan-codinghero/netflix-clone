@@ -1,0 +1,147 @@
+.plan-grid {
+    display: grid;
+}
+
+.plans-row {
+    background-color: white;
+    width: 100%;
+}
+
+.plans-row.sticky {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(6.5rem, auto);
+    column-gap: 2%;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.plans__title {
+    padding: 0.8rem 0.4rem;
+    background-color: #e50914;
+    opacity: 0.6;
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plans__title.active-plan {
+    opacity: 1;
+}
+
+.features {
+    color: #737373;
+    fill: #737373;
+}
+
+.feature-description {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1.6rem 0.8rem 0.4rem;
+    font-weight: 400;
+}
+.feature-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(3.7rem, auto);
+    column-gap: 2%;
+    font-size: 1.6rem;
+    font-weight: 700;
+    align-items: center;
+}
+/* .feature-item > div {
+    text-align: center;
+    padding: 0.8rem;
+    position: relative;
+} */
+
+.feature-item > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-item .screen {
+    /* display: inline-block; */
+    border: 2px solid #737373;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    width: 2.6rem;
+    height: 2.6rem;
+    text-align: center;
+    /* line-height: 2.2rem; */
+    color: #737373;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+.features .active-plan {
+    color: red;
+    border-color: red;
+}
+
+.button-container {
+    margin: 2.5rem auto 0;
+    width: 60%;
+    max-width: 440px;
+    text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+    .plans {
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+    }
+    .features {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: minmax(6rem, auto);
+    }
+    .feature-description {
+        width: 100%;
+        min-height: 3.7rem;
+        text-align: left;
+        padding: 0;
+    }
+    .plans__selector {
+        display: flex;
+        justify-content: flex-start;
+    }
+    .plans__title {
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .feature-item {
+    }
+    .feature-description {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    .plans__title {
+        width: 12rem;
+        height: 12rem;
+    }
+}
+
+/* selected color: e50914  */

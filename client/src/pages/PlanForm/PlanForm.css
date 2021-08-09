@@ -1,0 +1,17 @@
+/* .planform-container .icon-item {
+    margin: 0.5rem 0;
+} */
+
+/* .planform-container .step__body {
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+} */
+.planform-container .center-container--body {
+    max-width: 300px;
+}
+
+@media screen and (max-width: 599px) {
+    /* .planform-container .step__body {
+        padding: 0;
+    } */
+}

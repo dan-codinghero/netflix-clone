@@ -1,0 +1,17 @@
+.banner-info__buttons {
+    margin-top: 1.5vw;
+    display: flex;
+    /* line-height: 88%; */
+    /* width: 60%; */
+}
+
+.banner-info__buttons--play {
+    /* width: 50%; */
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+.banner-info__buttons--info {
+    /* width: 50%; */
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}

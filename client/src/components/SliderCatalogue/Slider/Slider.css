@@ -1,0 +1,66 @@
+.slider {
+    padding: 0 4%;
+    position: relative;
+    overflow-x: hidden;
+}
+.slider-mask {
+    overflow-x: visible;
+}
+.slider-content {
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.slider-content.animating {
+    transition: transform 0.75s ease 0s;
+    pointer-events: none;
+}
+
+/* SLIDER CONTROLS */
+.slider-control {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5vw;
+    cursor: pointer;
+    color: #fff;
+    z-index: 1;
+}
+.slider-control-arrow {
+    transition-duration: 0.1s;
+}
+
+.slider-control-arrow > svg {
+    display: none;
+}
+.slider-control--right {
+    right: 0;
+    background-color: rgba(20, 20, 20, 0.7);
+}
+.slider-control--left {
+    left: 0;
+    background-color: rgba(20, 20, 20, 0.7);
+}
+.slider-control-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-control:hover .slider-control-arrow,
+.slider-control:active .slider-control-arrow {
+    transform: scale(1.2);
+}
+
+.slider:hover .slider-control,
+.slider:active .slider-control {
+    background-color: rgba(20, 20, 20, 0.8);
+}
+.slider:hover .slider-control-arrow > svg,
+.slider:active .slider-control-arrow > svg {
+    display: inline;
+}

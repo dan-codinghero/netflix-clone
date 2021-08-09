@@ -1,0 +1,13 @@
+.section-panel {
+    padding: 5rem 5%;
+    width: 100%;
+    /* border-bottom: 8px solid #222; */
+    position: relative;
+    font-size: 1.3rem;
+}
+
+@media (min-width: 550px) {
+    .panel__accordion {
+        padding: 7rem 4.5rem;
+    }
+}

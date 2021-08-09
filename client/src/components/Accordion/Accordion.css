@@ -1,0 +1,19 @@
+/* .accordion__items {
+    max-width: 81.5rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media (min-width: 550px) {
+    .accordion__items {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 950px) {
+    .accordion__items {
+        margin: 0 auto;
+        width: 75%;
+    }
+} */

@@ -1,0 +1,221 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-width: 32rem;
+    color: white;
+    min-height: 100%;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    color: inherit;
+    font: inherit;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    margin: 1.5rem 0 0.4rem;
+}
+
+h1 {
+    font-size: 2.6rem;
+}
+h2,
+h3 {
+    font-size: 1.8rem;
+}
+
+@media (min-width: 550px) {
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 740px) {
+    h2 {
+        font-size: 2rem;
+    }
+}
+@media (min-width: 950px) {
+    h1 {
+        font-size: 5rem;
+    }
+    h2 {
+        font-size: 2.6rem;
+    }
+}
+
+/* .payment-option {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.center-container {
+    margin: 0 auto 15px;
+    padding: 20px 3% 60px;
+    max-width: 978px;
+    /* -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; */
+}
+.center-container--body {
+    text-align: left;
+    max-width: 440px;
+    margin: 0 auto;
+}
+
+/* STEP CARD */
+.step-title {
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin-bottom: 0.6rem;
+    white-space: pre-wrap;
+    line-height: 1.2;
+}
+
+.step-subtitle {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+    white-space: pre-wrap;
+}
+
+@media screen and (max-width: 599px) {
+    .center-container,
+    .center-container--body {
+        margin: 0;
+    }
+}
+@media screen and (min-width: 599px) {
+    .center-container--body {
+        text-align: center;
+    }
+}
+
+/* ICON GROUP */
+.icon-group--icon {
+    margin-right: 2px;
+}
+.icon-group-row {
+    display: flex;
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+.icon-group {
+    margin: 2rem 0;
+}
+
+/* BUTTON STYLES */
+.button {
+    border: none;
+    white-space: nowrap;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.button-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    /* margin-top: 0.5rem; */
+    /* background-color: #e50914; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.button:disabled {
+    cursor: not-allowed;
+    color: #ccc;
+}
+
+.button--brand {
+    border-radius: 0.2rem;
+    background: #f40612;
+    color: white;
+}
+
+.button--brand:focus,
+.button---brand:hover {
+    background: #bb0a12;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+}
+.button--primary {
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 1px solid #757575;
+    /* max-height: 4.5rem; */
+}
+
+.button--primary.hover,
+.button--primary:focus,
+.button---primary:hover {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.button--secondary {
+    background-color: rgb(109 109 110 / 1);
+    border-radius: 4px;
+    color: white;
+}
+
+.button--secondary.hover,
+.button--secondary:focus,
+.button---secondary:hover {
+    background-color: rgb(109 109 110, 0.75);
+}
+
+.button--sm {
+    padding: 0.6rem;
+    font-size: 1.2rem;
+}
+
+.button--md {
+    font-size: 1.6rem;
+    padding: 0.4rem 1.6rem;
+    min-height: 5rem;
+}
+
+.button > svg {
+    margin: 0 0 0 0.6rem;
+}
+
+@media screen and (min-width: 950px) {
+    .button--sm {
+        padding: 1rem;
+        font-size: 1.4rem;
+    }
+    .button--md {
+        min-height: 6rem;
+        padding: 0.4rem 1.8rem;
+        font-size: 1.8rem;
+    }
+}

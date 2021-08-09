@@ -1,0 +1,36 @@
+.select-picker {
+    display: inline-block;
+    position: relative;
+    border: 1px solid #333;
+}
+
+.select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: inherit;
+    background-image: none;
+    font-size: 1.6rem;
+    color: #757575;
+    padding: 1.5rem 2.5rem 1.5rem 4rem;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+}
+
+.select-icon {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    font-size: 18px;
+    color: inherit;
+    pointer-events: none;
+}
+
+.select-chevron {
+    position: absolute;
+    font-size: 18px;
+    pointer-events: none;
+    top: 30%;
+    right: 5%;
+}

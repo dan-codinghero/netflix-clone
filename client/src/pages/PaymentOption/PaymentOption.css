@@ -1,0 +1,36 @@
+.payment__vendor {
+    width: auto;
+    height: 2rem;
+    margin: 0 0.2rem 0;
+}
+.payment__vendors {
+    margin-left: 0.8rem;
+    display: flex;
+    justify-content: center;
+}
+.payment {
+    font-size: 1.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.payment-option .button {
+    font-weight: normal;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .payment-option .content-row {
+    white-space: pre-wrap;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+} */
+.payment-option .center-container--body {
+    max-width: 350px;
+}
+
+.payment-option .emphasize {
+    font-weight: bold;
+}

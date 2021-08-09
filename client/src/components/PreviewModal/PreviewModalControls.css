@@ -1,0 +1,67 @@
+.action-items {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.action-buttons {
+    min-height: 3.2rem;
+    min-width: 3.2rem;
+    max-height: 4.2rem;
+    max-width: 4.2rem;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.action-buttons--fill {
+    /* border: none; */
+    background-color: white;
+}
+.link {
+    margin: 0.35rem;
+    /* margin-right: 0.4rem; */
+    display: inline-block;
+}
+
+/* .link--last .action-buttons {
+    align-self: flex-end;
+} */
+.link--last {
+    margin-left: auto !important;
+}
+.action-buttons svg {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+    width: auto;
+}
+
+.small-btn {
+    height: 1.8rem;
+    width: 1.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 699px) {
+    .action-buttons {
+        /* font-size: 0.8rem;
+        min-height: 2.2rem;
+        min-width: 2.2rem;
+        max-height: 2.2rem;
+        max-width: 2.2rem; */
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .link {
+        /* margin: 0.35rem; */
+    }
+}

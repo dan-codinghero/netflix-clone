@@ -1,0 +1,77 @@
+[
+    {
+        "id": 2,
+        "text": "FAQ",
+        "href": "/"
+    },
+    {
+        "id": 3,
+        "text": "Help Center",
+        "href": "/"
+    },
+    {
+        "id": 4,
+        "text": "Account",
+        "href": "/"
+    },
+    {
+        "id": 5,
+        "text": "Media Center ",
+        "href": "/"
+    },
+    {
+        "id": 6,
+        "text": "Investor Relations",
+        "href": "/"
+    },
+    {
+        "id": 7,
+        "text": "Jobs",
+        "href": "/"
+    },
+    {
+        "id": 8,
+        "text": "Ways to Watch ",
+        "href": "/"
+    },
+    {
+        "id": 9,
+        "text": "Terms of Use",
+        "href": "/"
+    },
+    {
+        "id": 10,
+        "text": "Privacy",
+        "href": "/"
+    },
+    {
+        "id": 11,
+        "text": "Cookie Preferences",
+        "href": "/"
+    },
+    {
+        "id": 12,
+        "text": "Corporate Information",
+        "href": "/"
+    },
+    {
+        "id": 13,
+        "text": "Contact Us",
+        "href": "/"
+    },
+    {
+        "id": 14,
+        "text": "Speed Test",
+        "href": "/"
+    },
+    {
+        "id": 15,
+        "text": "Legal Notices",
+        "href": "/"
+    },
+    {
+        "id": 16,
+        "text": "Cineplex Originals",
+        "href": "/"
+    }
+]

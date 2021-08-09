@@ -1,0 +1,36 @@
+.divider {
+    width: 100%;
+    z-index: 2;
+}
+
+.divider--xs {
+    border: 1px solid;
+}
+
+.divider--sm {
+    border: 2px solid;
+}
+.divider--md {
+    border: 4px solid;
+}
+.divider--lg {
+    border: 6px solid;
+}
+.divider--xl {
+    border: 8px solid;
+}
+
+.divider--light {
+    border-color: #e6e6e6;
+    background-color: #e6e6e6;
+}
+.divider--dark {
+    border-color: #222;
+    background-color: #222;
+}
+
+/* .divider--light.divider--xs,
+.divider--light.divider--sm,
+.divider--light.divider--md,
+.divider--light.divider--lg,
+.divider--light.divider--xl  */

@@ -1,0 +1,9 @@
+.profile-cards {
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+}
+
+.profile-cards__item:not(:last-child) {
+    margin: 0 2vw 0 0;
+}

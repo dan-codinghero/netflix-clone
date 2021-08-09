@@ -1,0 +1,14 @@
+.evidence-list {
+    /* display: flex; */
+    /* font-size: 1.6rem; */
+}
+.evidence-item {
+    display: inline-block;
+    /* flex: 1 0 auto; */
+    padding-right: 0.5vw;
+}
+.evidence-item--separator::before {
+    content: '\2022';
+    padding-right: 0.5vw;
+    color: #646464;
+}

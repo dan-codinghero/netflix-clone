@@ -1,0 +1,20 @@
+.video-meta-data {
+    display: flex;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+}
+.meta {
+    display: inline-block;
+    color: white;
+    margin-right: 0.75vw;
+    line-height: 1;
+}
+.meta:not(:last-child) {
+}
+.meta--match-score {
+    color: #46d369;
+}
+.meta--rating {
+    border: 1px solid white;
+    padding: 0 0.4rem;
+}
