@@ -1,6 +1,8 @@
 # Netflix Clone using MERN stack.
 
-This repository contains source code for a Netflix Clone using MERN stack. After learning the fundamentals of each tool, I decided to give myself a challenge and this is the result.
+This repository contains source code for a Netflix Clone using MERN stack. This application was built to mimic the netflix signup process to browse workflow.
+
+Redux is used for state management in this app. For the authentication process, JWT token is used with a silent refresh token workflow. I built my own custom hooks for form validation and submission and created a wrapper around the fetch api. Please free feel to contribute and share feedback on project.
 
 ## How to use
 
