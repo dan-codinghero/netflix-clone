@@ -12,7 +12,6 @@ import { useGetVideosQuery } from '../../api/video.api';
 
 const BrowseContent = (props) => {
     const { data: videos, error, isLoading } = useGetVideosQuery();
-    console.log(videos);
 
     const itemsInRow = useItemsInRow();
 

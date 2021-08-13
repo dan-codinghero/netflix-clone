@@ -4,30 +4,6 @@ import { Route, Redirect } from 'react-router-dom';
 import WORKFLOW_ROUTES from '../constants/workflow-routes';
 import { STATE_SLICE } from '../store/state-configuration';
 
-/* export function ProtectedRoute({ Component, redirectPath, isSignedIn, path, ...rest }) {
-    return (
-        <Route
-            {...rest}
-            path={path}
-            render={({ location }) => {
-                return Component && <Component />;
-            }}
-        />
-    );
-}
-
-export function IsUserRedirect({ Component, redirectPath, isSignedIn, path, ...rest }) {
-    return (
-        <Route
-            {...rest}
-            path={path}
-            render={({ location }) => {
-                return Component && <Component />;
-            }}
-        />
-    );
-} */
-
 export function ProtectedRoute({ Component, redirectPath, isSignedIn, path, ...rest }) {
     const { workflow } = useSelector((state) => state[STATE_SLICE.ACCOUNT.name]);
     const userCanBrowse = WORKFLOW_ROUTES[workflow].allowed.includes(path);
@@ -36,7 +12,6 @@ export function ProtectedRoute({ Component, redirectPath, isSignedIn, path, ...r
             {...rest}
             path={path}
             render={({ location }) => {
-                console.log(`user with workflow ${workflow} and can browse status ${userCanBrowse} is trying to access ${path}`);
                 if (isSignedIn && userCanBrowse) {
                     return Component && <Component />;
                 }
@@ -79,7 +54,6 @@ export function IsUserRedirect({ Component, redirectPath, isSignedIn, path, ...r
             {...rest}
             path={path}
             render={({ location }) => {
-                console.log(`user with workflow ${workflow} and can browse status ${userCanBrowse} is trying to access ${path}`);
                 if (userCanBrowse) {
                     return Component && <Component />;
                 }

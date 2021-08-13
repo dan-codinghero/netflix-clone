@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import { AiFillBell, AiOutlineGift } from 'react-icons/ai';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link, useHistory } from 'react-router-dom';
-import request from '../../api/request-config';
 import { ROUTES } from '../../constants/routes';
 import { WORKFLOW } from '../../constants/workflow';
 import { logout } from '../../store/auth-slice';
@@ -23,11 +22,12 @@ const SecondaryNavItems = (props) => {
 
     const renderSecondaryNavItems = () => {
         if (isSignedIn && workflow === WORKFLOW.BROWSWE && activeProfile) {
-            const profile = profiles.filter((profile) => profile.guid === activeProfile);
+            const profile = profiles.filter((profile) => profile.guid === activeProfile)[0];
 
             // const imgUrl = `${request.defaults.baseUrl}/static/images/${profile.avatarName}`;
-            const profileAvatar = `${request.defaults.baseUrl}/static/images/tiny/${profile[0].avatarName}`;
-            // const profileAvatar = require('../../assets/images/avatars/avatar-4.png').default;
+            // const profileAvatar = `${request.defaults.baseUrl}/static/images/tiny/${profile.avatarName}`;
+            // const profileAvatar = `${process.env.REACT_APP_ASSETS_URI}/images/tiny/${profile.avatarName}`;
+            const profileAvatar = require(`../../assets/images/profile-cards/tiny/${profile.avatarName}`).default;
 
             return (
                 <Fragment>

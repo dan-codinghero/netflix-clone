@@ -1,6 +1,5 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import request from '../../../../api/request-config';
 import { accountActions } from '../../../../store/account-slice';
 
 import './ProfileCard.css';
@@ -8,7 +7,9 @@ import './ProfileCard.css';
 const ProfileCard = (props) => {
     const { profile } = props;
 
-    const imgUrl = `${request.defaults.baseUrl}/static/images/${profile.avatarName}`;
+    const imgUrl = require(`../../../../assets/images/profile-cards/large/${profile.avatarName}`).default;
+    // const imgUrl = `${process.env.REACT_APP_ASSETS_URI}/images/${profile.avatarName}`;
+    // const imgUrl = `${request.defaults.baseUrl}/static/images/${profile.avatarName}`;
     const profileAvatarStyle = { backgroundImage: `url(${imgUrl})` };
     const dispatch = useDispatch();
 
