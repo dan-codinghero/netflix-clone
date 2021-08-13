@@ -94,31 +94,3 @@ const PaymentOption = (props) => {
 };
 
 export default PaymentOption;
-// <Step>
-// {requestError && <div>{requestError}</div>}
-
-// <Step.Header>
-//     <Step.Image imgSrc={stepImage}></Step.Image>
-//     <Step.Progress>{`STEP 3 OF 3`}</Step.Progress>
-//     <Step.Title title="Set up your payment"></Step.Title>
-// </Step.Header>
-// <Step.Body>
-//     <Step.Content>
-//         <p>{`Your membership starts as\nsoon as you set up\npayment.`}</p>
-//     </Step.Content>
-//     <Step.Content>
-//         <p className="emphasize">{`No commitments.\nCancel online anytime.`}</p>
-//     </Step.Content>
-//     <Button type="primary" size="md" onClick={handlePaymentOption}>
-//         <span className="payment">
-//             Credit or Debit Card
-//             <span className="payment__vendors">
-//                 <img className="payment__vendor" src={visa} alt="" />
-//                 <img className="payment__vendor" src={mastercard} alt="" />
-//                 <img className="payment__vendor" src={amex} alt="" />
-//             </span>
-//         </span>
-//         <VscChevronRight />
-//     </Button>
-// </Step.Body>
-// </Step>

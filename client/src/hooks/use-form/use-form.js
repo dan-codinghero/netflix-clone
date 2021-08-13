@@ -12,14 +12,6 @@ const useForm = (defaultValues = {}) => {
     const [formState, setFormState] = useState(initFormState);
     const formStateRef = useRef(initFormState);
     const formInputs = useRef({});
-    // const onSubmit = useRef();
-
-    // const { isValid, isSubmitting } = formState;
-    // useEffect(() => {
-    //     if (!onSubmit.current || !isValid) return;
-
-    //     // onSubmit.current.submitHandler();
-    // }, [isValid, isSubmitting]);
 
     const getValues = useCallback((name = '') => {
         const formValues = {};

@@ -75,38 +75,42 @@ async function start(): Promise<void> {
             useUnifiedTopology: true,
             useCreateIndex: true,
         });
+
+        const plan = await Plan.findOne();
+        if (!plan) {
+            await Plan.create(
+                {
+                    name: 'Basic',
+                    videoQuality: 'Good',
+                    resolution: '480p',
+                    description: 'Good video quality in SD (480p). Watch on any phone, tablet, computer or TV. ',
+                    price: 'US$7.99',
+                    supportedDevices: [Device.TV, Device.Computer, Device.Mobile, Device.Tablet],
+                    maxScreenCount: 1,
+                },
+                {
+                    name: 'Standard',
+                    videoQuality: 'Better',
+                    resolution: '1080p',
+                    description: 'Great video quality in Full HD (1080p). Watch on any phone, tablet, computer or TV.',
+                    price: 'US$10.99',
+                    supportedDevices: [Device.TV, Device.Computer, Device.Mobile, Device.Tablet],
+                    maxScreenCount: 2,
+                },
+                {
+                    name: 'Premium',
+                    videoQuality: 'Best',
+                    resolution: '4K+HDR',
+                    description: 'Our best video quality in Ultra HD (4K) and HDR. Watch on any phone, tablet, computer or TV.',
+                    price: 'US$13.99',
+                    supportedDevices: [Device.TV, Device.Computer, Device.Mobile, Device.Tablet],
+                    maxScreenCount: 5,
+                }
+            );
+        }
     } catch (err) {
         throw err;
     }
-    // await Plan.create(
-    //     {
-    //         name: 'Basic',
-    //         videoQuality: 'Good',
-    //         resolution: '480p',
-    //         description: 'Good video quality in SD (480p). Watch on any phone, tablet, computer or TV. ',
-    //         price: 'US$7.99',
-    //         supportedDevices: [Device.TV, Device.Computer, Device.Mobile, Device.Tablet],
-    //         maxScreenCount: 1,
-    //     },
-    //     {
-    //         name: 'Standard',
-    //         videoQuality: 'Better',
-    //         resolution: '1080p',
-    //         description: 'Great video quality in Full HD (1080p). Watch on any phone, tablet, computer or TV.',
-    //         price: 'US$10.99',
-    //         supportedDevices: [Device.TV, Device.Computer, Device.Mobile, Device.Tablet],
-    //         maxScreenCount: 2,
-    //     },
-    //     {
-    //         name: 'Premium',
-    //         videoQuality: 'Best',
-    //         resolution: '4K+HDR',
-    //         description: 'Our best video quality in Ultra HD (4K) and HDR. Watch on any phone, tablet, computer or TV.',
-    //         price: 'US$13.99',
-    //         supportedDevices: [Device.TV, Device.Computer, Device.Mobile, Device.Tablet],
-    //         maxScreenCount: 5,
-    //     }
-    // );
 }
 
 start();

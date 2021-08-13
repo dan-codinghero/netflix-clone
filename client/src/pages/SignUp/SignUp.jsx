@@ -66,23 +66,3 @@ const SignUp = (props) => {
 };
 
 export default SignUp;
-
-// <Step>
-//                         <Step.Header>
-//                             <Step.Image imgSrc={stepImage}></Step.Image>
-//                             <div>STEP 2 OF 3</div>
-//                             <Step.Title title="Choose your plan."></Step.Title>
-//                         </Step.Header>
-//                         <Step.Body>
-//                             {items.map((item) => (
-//                                 <IconItem key={item}>
-//                                     <IconItem.Icon icon={<VscCheck color="red" />} />
-//                                     <IconItem.Text text={item} />
-//                                 </IconItem>
-//                             ))}
-
-//                             <ButtonLink href={{ pathname: ROUTES.PLANFORM, state: { fromSignup: true } }} size="md">
-//                                 SEE THE PLANS
-//                             </ButtonLink>
-//                         </Step.Body>
-//                     </Step>

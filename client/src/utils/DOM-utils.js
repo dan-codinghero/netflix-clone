@@ -23,16 +23,3 @@ export const getElementOffsetToWindow = (DOMRect) => {
     rect.y = rect.top;
     return rect;
 };
-
-// export const getElementOffsetToWindow = (rect) => {
-//     const
-//     const xPosition = window.pageXOffset;
-//     const yPosition = window.pageYOffset;
-//     const top = rect.top + yPosition;
-//     const left = rect.left + xPosition;
-//     const right = rect.right + xPosition;
-//     const bottom = rect.bottom + yPosition;
-//     const x = left;
-//     const y = top;
-//     return { ...rect, top, right, bottom, left, x, y };
-// };

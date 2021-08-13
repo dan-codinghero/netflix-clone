@@ -4,13 +4,19 @@ This repository contains source code for a Netflix Clone using MERN stack. This 
 
 Redux is used for state management in this app. For the authentication process, JWT token is used with a silent refresh token workflow. I built my own custom hooks for form validation and submission and created a wrapper around the fetch api. Please free feel to contribute and share feedback on project.
 
+N.B. This repository was created solely for learning purposes
+
+## Live site
+
+https://react-nexflix-clone.netlify.app/
+
 ## How to use
 
 Download/Clone the project
 
 -   API
 
-    -   Create a **.env** file in root directory of api folder and add the entries below
+    -   Create a **.env** file in root directory of api folder and add the entries below  
         PORT = 'Your port'  
         MONGODB_URI = 'Mongo DB connecting strung'  
         ACCESS_TOKEN_SECRET = 'Your secret'  
