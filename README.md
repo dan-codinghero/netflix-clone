@@ -25,7 +25,7 @@ Download/Clone the project
         REFRESH_TOKEN_EXPIRATION = 30d  
         ACCESS_TOKEN_COOKIE_NAME = 'Cookie name'  
         REFRESH_TOKEN_COOKIE_NAME = 'Cookie name'
-
+        ALLOW_ORIGINS = "CLIENT ENDPOINT"
     -   Run **npm install**
     -   Run **npm run dev** to start project
 

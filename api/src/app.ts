@@ -15,14 +15,14 @@ import cookieParser from 'cookie-parser';
 import shortUUID from 'short-uuid';
 import path from 'path';
 import { ApiError } from './http/errors/api-error';
-import { MONGODB_URI, PORT } from './utils/constants';
+import { ALLOW_ORIGINS, MONGODB_URI, PORT } from './utils/constants';
 
 dotenv.config();
 
 const app: Express = express();
 
 // Allow CORS
-app.use(cors({ origin: 'http://localhost:5000', credentials: true }));
+app.use(cors({ origin: ALLOW_ORIGINS, credentials: true }));
 
 app.use(cookieParser('82e4e438a0705fabf61f9854e3b575af'));
 
